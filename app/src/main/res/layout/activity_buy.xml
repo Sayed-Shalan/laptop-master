@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_buy"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    tools:context="com.example.zerox.labtop.BuyActivity">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/TextLabel">
+
+        <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/ETName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:drawableLeft="@drawable/ic_account"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/ic_account"
+        android:hint="@string/namehint"
+        android:inputType="textPersonName"
+        android:maxLines="1"
+        android:textColor="@color/primary_text"
+        android:textColorHint="@color/secondary_text" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/TextLabel">
+
+        <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/ETPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:drawableLeft="@drawable/ic_call"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/ic_call"
+        android:hint="@string/phonehint"
+        android:inputType="phone"
+        android:maxLines="1"
+        android:textColor="@color/primary_text"
+        android:textColorHint="@color/secondary_text" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/TextLabel">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/ETAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:drawableLeft="@drawable/ic_add"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/ic_add"
+            android:hint="@string/Addresshint"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColor="@color/primary_text"
+            android:textColorHint="@color/secondary_text" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btnOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="@string/btnOrder"
+        android:textAllCaps="false"
+        android:textColor="@color/icons"
+        android:theme="@style/MyButton" />
+
+</LinearLayout>
